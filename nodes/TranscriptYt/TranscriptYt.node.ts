@@ -304,7 +304,7 @@ export class TranscriptYt implements INodeType {
 						name: 'Search',
 						value: 'search',
 						action: 'Search videos',
-						description: 'Search YouTube, optionally within one channel (free)',
+						description: 'Search YouTube, optionally within one channel (free on paid plans)',
 						routing: {
 							request: { method: 'GET', url: '/v1/search' },
 							output: {
@@ -316,7 +316,7 @@ export class TranscriptYt implements INodeType {
 						name: 'List Playlist or Channel',
 						value: 'playlist',
 						action: 'List videos in a playlist or channel',
-						description: "List the videos in a playlist or a channel's uploads (free)",
+						description: "List the videos in a playlist or a channel's uploads (free on paid plans)",
 						routing: {
 							request: { method: 'GET', url: '/v1/playlist' },
 							output: {
